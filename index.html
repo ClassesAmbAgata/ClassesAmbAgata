@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Classes amb Agata | Català online amb mètode i confiança</title>
+  <meta name="description" content="Classes online de català amb mètode: conversa guiada, correcció respectuosa i objectius clars. Preparació C1–C2 i suport acadèmic en Castellà, FOL (IPO), Geografia i Història." />
+
+  <!-- Tailwind CDN (tal com demanes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    /* Evita “salt” d’ancoratges amb header sticky */
+    section { scroll-margin-top: 90px; }
+  </style>
+</head>
+
+<body class="bg-white text-slate-900">
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <a href="#top" class="flex items-center gap-2">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 text-white font-semibold">A</span>
+        <div class="leading-tight">
+          <div class="font-semibold">Classes amb Agata</div>
+          <div class="text-xs text-slate-500">Català online · Mètode acadèmic</div>
+        </div>
+      </a>
+
+      <nav class="hidden items-center gap-6 text-sm text-slate-700 md:flex">
+        <a class="hover:text-slate-950" href="#metode">Mètode</a>
+        <a class="hover:text-slate-950" href="#serveis">Serveis</a>
+        <a class="hover:text-slate-950" href="#opinions">Opinions</a>
+        <a class="hover:text-slate-950" href="#faq">FAQ</a>
+        <a class="hover:text-slate-950" href="#contacte">Contacte</a>
+      </nav>
+
+      <a
+        href="#contacte"
+        class="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
+      >
+        Reserva una sessió
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
+    <section class="relative overflow-hidden">
+      <!-- FONS DECORATIU -->
+      <div class="absolute inset-0">
+        <!-- imatge de fons (local) -->
+        <img
+          src="hero.jpg"
+          alt="Agata fent classe online"
+          class="h-full w-full object-cover"
+          onerror="this.style.display='none'; document.getElementById('heroFallback').classList.remove('hidden');"
+        />
+        <!-- fallback si no hi ha imatge -->
+        <div id="heroFallback" class="hidden h-full w-full bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950"></div>
+
+        <!-- overlay perquè el text sigui llegible -->
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/75 to-slate-950/30"></div>
+
+        <!-- blobs decoratius -->
+        <div class="absolute -top-32 left-1/2 h-80 w-[44rem] -translate-x-1/2 rounded-full bg-white/10 blur-3xl"></div>
+        <div class="absolute -bottom-32 left-1/2 h-80 w-[44rem] -translate-x-1/2 rounded-full bg-emerald-400/10 blur-3xl"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
+        <div class="grid gap-10 md:grid-cols-2 md:items-center">
+          <!-- Text -->
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-medium text-white/90">
+              <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+              100% online · Conversa guiada · Progrés mesurable
+            </p>
+
+            <h1 class="mt-5 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              Català amb mètode.
+              <span class="block text-white/80">Parla més, sense por d’equivocar-te.</span>
+            </h1>
+
+            <p class="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
+              Sóc l’Agata. Faig classes estructurades i pràctiques per guanyar fluïdesa i seguretat: molta conversa, correcció respectuosa i objectius clars.
+            </p>
+
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                href="#contacte"
+                class="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 shadow-sm hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-950"
+              >
+                Demana informació
+              </a>
+              <a
+                href="#serveis"
+                class="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2 focus:ring-offset-slate-950"
+              >
+                Veure serveis
+              </a>
+            </div>
+
+            <div class="mt-8 grid grid-cols-3 gap-3 sm:gap-4">
+              <div class="rounded-2xl border border-white/15 bg-white/10 p-4 text-center">
+                <div class="text-lg font-semibold text-white">C1–C2</div>
+                <div class="mt-1 text-xs text-white/70">Preparació</div>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/10 p-4 text-center">
+                <div class="text-lg font-semibold text-white">Oralitat</div>
+                <div class="mt-1 text-xs text-white/70">Parlar des del minut 1</div>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/10 p-4 text-center">
+                <div class="text-lg font-semibold text-white">Seguiment</div>
+                <div class="mt-1 text-xs text-white/70">Objectius i millora</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card dreta -->
+          <div class="relative">
+            <div class="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-sm backdrop-blur">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h2 class="text-lg font-semibold text-white">Com funciona una classe?</h2>
+                  <p class="mt-1 text-sm text-white/75">Estructura acadèmica, però amb molta pràctica real.</p>
+                </div>
+                <span class="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold text-white">Online</span>
+              </div>
+
+              <ol class="mt-5 space-y-4">
+                <li class="flex gap-3">
+                  <span class="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-xl bg-white text-xs font-semibold text-slate-950">1</span>
+                  <div>
+                    <div class="text-sm font-semibold text-white">Conversa guiada</div>
+                    <div class="text-sm text-white/75">Temes reals per desbloquejar la parla i guanyar fluïdesa.</div>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-xl bg-white text-xs font-semibold text-slate-950">2</span>
+                  <div>
+                    <div class="text-sm font-semibold text-white">Correcció respectuosa</div>
+                    <div class="text-sm text-white/75">Corregeixo sense tallar-te i expliquem el “per què”.</div>
+                  </div>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-xl bg-white text-xs font-semibold text-slate-950">3</span>
+                  <div>
+                    <div class="text-sm font-semibold text-white">Objectius i mini-tasca</div>
+                    <div class="text-sm text-white/75">Un pas petit però constant per avançar cada setmana.</div>
+                  </div>
+                </li>
+              </ol>
+
+              <div class="mt-6 rounded-2xl bg-slate-950/40 p-4">
+                <p class="text-sm text-white/85">
+                  <span class="font-semibold text-white">Ideal si…</span> entens el català però et bloqueges parlant, o vols preparar un nivell alt (C1–C2) amb ordre i constància.
+                </p>
+              </div>
+
+              <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="#contacte"
+                  class="inline-flex w-full items-center justify-center rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-950 shadow-sm hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950"
+                >
+                  Anar al formulari
+                </a>
+                <a
+                  href="mailto:agata298m@gmail.com?subject=Informaci%C3%B3%20classes%20online%20-%20Agata&body=Hola%20Agata%2C%0A%0AM%27agradaria%20informaci%C3%B3%20sobre%20classes%20online.%0A%0AObjectiu%3A%20%0ANivell%20aproximat%3A%20%0ADisponibilitat%3A%20%0A%0AGr%C3%A0cies!"
+                  class="inline-flex w-full items-center justify-center rounded-2xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2 focus:ring-offset-slate-950"
+                >
+                  Escriu per email
+                </a>
+              </div>
+
+              <p class="mt-4 text-xs text-white/60">
+                * Comença si vols amb una sessió curta de prova (20–30 min) per veure si encaixa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Crèdits imatges (com que ens has donat links de pàgina) -->
+        <div class="mt-10 rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-white/70">
+          Imatges de referència (Freepik): 
+          <a class="underline hover:text-white" target="_blank" rel="noopener noreferrer"
+             href="https://www.freepik.com/free-photo/woman-writing-business-idea_13164992.htm">1</a>,
+          <a class="underline hover:text-white" target="_blank" rel="noopener noreferrer"
+             href="https://www.freepik.com/free-photo/senior-people-school-class-with-laptop-computer_37446866.htm">2</a>,
+          <a class="underline hover:text-white" target="_blank" rel="noopener noreferrer"
+             href="https://www.freepik.com/free-photo/virtual-classroom-study-space_20505406.htm">3</a>.
+          <span class="block mt-1">
+            Nota: per usar-les com a fons en una web cal l’enllaç directe JPG/PNG o descarregar-les com a fitxers locals.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÈTODE -->
+    <section id="metode" class="border-t border-slate-200/70 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+        <div class="max-w-2xl">
+          <h2 class="text-2xl font-semibold tracking-tight sm:text-3xl">Un mètode que dona seguretat</h2>
+          <p class="mt-3 text-slate-700">
+            L’objectiu no és “parlar perfecte”, sinó parlar amb confiança i millorar amb estructura. 
+            Treballarem fluïdesa, vocabulari i correcció de manera clara i respectuosa.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="text-sm font-semibold">Estructura acadèmica</div>
+            <p class="mt-2 text-sm text-slate-600">Cada sessió té objectiu, pràctica, feedback i tancament.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="text-sm font-semibold">Parla des del minut 1</div>
+            <p class="mt-2 text-sm text-slate-600">Conversa guiada perquè guanyis fluïdesa i no et bloquegis.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="text-sm font-semibold">Correcció útil i respectuosa</div>
+            <p class="mt-2 text-sm text-slate-600">T’explico patrons d’error i com corregir-los de forma pràctica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVEIS -->
+    <section id="serveis" class="border-t border-slate-200/70 bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+        <div class="max-w-2xl">
+          <h2 class="text-2xl font-semibold tracking-tight sm:text-3xl">Serveis</h2>
+          <p class="mt-3 text-slate-700">
+            Classes online individuals (o en parella). Ens adaptem al teu nivell i objectiu.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-lg font-semibold">Català · Conversa i fluïdesa</h3>
+                <p class="mt-1 text-sm text-slate-600">Per parlar amb seguretat i naturalitat.</p>
+              </div>
+              <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">Més demanat</span>
+            </div>
+            <ul class="mt-4 space-y-2 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span> Conversa guiada + vocabulari real</li>
+              <li class="flex gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span> Correcció sense tallar el ritme</li>
+              <li class="flex gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span> Objectius setmanals i seguiment</li>
+            </ul>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold">Català · Preparació C1–C2</h3>
+            <p class="mt-1 text-sm text-slate-600">Pràctica oral, expressió escrita i estratègia.</p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-700">
+              <li class="flex gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span> Simulacions i correcció detallada</li>
+              <li class="flex gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span> Cohesió, connectors, registre</li>
+              <li class="flex gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span> Planificació d’estudi amb ordre</li>
+            </ul>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:col-span-2">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <h3 class="text-lg font-semibold">Suport acadèmic (altres matèries)</h3>
+              <span class="text-xs font-semibold text-slate-600">Online · Individual</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">
+              Com a llicenciada en Sociologia, també ofereixo reforç i preparació en:
+            </p>
+
+            <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 text-sm font-semibold">Castellà</div>
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 text-sm font-semibold">FOL (IPO)</div>
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 text-sm font-semibold">Geografia</div>
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 text-sm font-semibold">Història</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINIONS -->
+    <section id="opinions" class="border-t border-slate-200/70 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+        <div class="max-w-2xl">
+          <h2 class="text-2xl font-semibold tracking-tight sm:text-3xl">Opinions d’alumnes</h2>
+          <p class="mt-3 text-slate-700">Quan vulguis, substituïm aquests textos per testimonis reals.</p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <figure class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <blockquote class="text-sm text-slate-700">
+              “Em sento molt més segura parlant. La correcció és respectuosa i em fa parlar tota l’estona.”
+            </blockquote>
+            <figcaption class="mt-4 text-xs font-semibold text-slate-500">Alumna · Alemanya</figcaption>
+          </figure>
+          <figure class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <blockquote class="text-sm text-slate-700">
+              “Classes molt estructurades i pràctiques. Veig progrés setmana a setmana.”
+            </blockquote>
+            <figcaption class="mt-4 text-xs font-semibold text-slate-500">Alumne · Itàlia</figcaption>
+          </figure>
+          <figure class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <blockquote class="text-sm text-slate-700">
+              “Preparant el C2, m’ha ajudat molt amb registre i cohesió. I amb confiança.”
+            </blockquote>
+            <figcaption class="mt-4 text-xs font-semibold text-slate-500">Alumna · C2 (València)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="border-t border-slate-200/70 bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+        <div class="max-w-2xl">
+          <h2 class="text-2xl font-semibold tracking-tight sm:text-3xl">Dubtes freqüents</h2>
+          <p class="mt-3 text-slate-700">Respostes clares per decidir amb tranquil·litat.</p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="text-sm font-semibold">Quina durada tenen les sessions?</div>
+            <p class="mt-2 text-sm text-slate-600">Habitualment 50–60 minuts. També podem fer una sessió curta (20–30 min) per començar.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="text-sm font-semibold">Com són les correccions?</div>
+            <p class="mt-2 text-sm text-slate-600">Respectuoses i útils: no tallo constantment, però sí que apunto i expliquem errors clau.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="text-sm font-semibold">És només per catalanoparlants?</div>
+            <p class="mt-2 text-sm text-slate-600">No. Treballo sovint amb alumnat internacional: l’important és marcar objectiu i ritme.</p>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="text-sm font-semibold">Quina plataforma uses?</div>
+            <p class="mt-2 text-sm text-slate-600">Google Meet o Zoom (la que et vagi millor). Si cal, comparteixo materials per Drive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTE + FORMULARI -->
+    <section id="contacte" class="border-t border-slate-200/70 bg-white">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 md:items-start">
+        <div>
+          <h2 class="text-2xl font-semibold tracking-tight sm:text-3xl">Contacte</h2>
+          <p class="mt-3 text-slate-700">
+            Explica’m el teu objectiu (conversa, C1–C2, reforç) i et respondré amb una proposta d’horaris.
+          </p>
+
+          <div class="mt-6 rounded-3xl border border-slate-200 bg-slate-50 p-6">
+            <div class="text-sm font-semibold">Email de contacte</div>
+            <a class="mt-2 inline-block text-sm font-semibold text-slate-900 underline hover:text-slate-700"
+               href="mailto:agata298m@gmail.com">agata298m@gmail.com</a>
+            <p class="mt-3 text-sm text-slate-600">
+              Si prefereixes, pots escriure directament per email amb: nivell, objectiu i disponibilitat.
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold">Envia el formulari</h3>
+          <p class="mt-1 text-sm text-slate-600">
+            Aquest formulari fa un <span class="font-semibold">POST</span> a un endpoint.
+            Quan me’l passis, només l’enganxem i ja queda 100% funcional.
+          </p>
+
+          <!-- ALERTES -->
+          <div id="formAlert" class="mt-4 hidden rounded-2xl border p-4 text-sm"></div>
+
+          <form id="contactForm" class="mt-6 space-y-4">
+            <div>
+              <label class="text-sm font-semibold text-slate-700" for="nom">Nom</label>
+              <input id="nom" name="nom" type="text" required
+                class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-900"
+                placeholder="El teu nom" />
+            </div>
+
+            <div>
+              <label class="text-sm font-semibold text-slate-700" for="email">Email</label>
+              <input id="email" name="email" type="email" required
+                class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-900"
+                placeholder="tu@exemple.com" />
+            </div>
+
+            <div>
+              <label class="text-sm font-semibold text-slate-700" for="objectiu">Objectiu</label>
+              <select id="objectiu" name="objectiu"
+                class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-900">
+                <option value="Català - Conversa i fluïdesa">Català · Conversa i fluïdesa</option>
+                <option value="Català - Preparació C1">Català · Preparació C1</option>
+                <option value="Català - Preparació C2">Català · Preparació C2</option>
+                <option value="Castellà - Reforç">Castellà · Reforç</option>
+                <option value="FOL (IPO) - Reforç">FOL (IPO) · Reforç</option>
+                <option value="Geografia - Reforç">Geografia · Reforç</option>
+                <option value="Història - Reforç">Història · Reforç</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-sm font-semibold text-slate-700" for="nivell">Nivell aproximat</label>
+              <input id="nivell" name="nivell" type="text"
+                class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-900"
+                placeholder="Ex.: B2 alt / C1 / Entenc però em costa parlar" />
+            </div>
+
+            <div>
+              <label class="text-sm font-semibold text-slate-700" for="missatge">Missatge</label>
+              <textarea id="missatge" name="missatge" rows="5" required
+                class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-slate-900"
+                placeholder="Explica què vols aconseguir i la teva disponibilitat."></textarea>
+            </div>
+
+            <!-- anti-spam simple -->
+            <input type="text" name="website" id="website" class="hidden" tabindex="-1" autocomplete="off" />
+
+            <button
+              id="submitBtn"
+              type="submit"
+              class="inline-flex w-full items-center justify-center rounded-2xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"
+            >
+              Enviar missatge
+            </button>
+
+            <p class="text-xs text-slate-500">
+              Privacitat: evita incloure dades sensibles. En enviar el formulari acceptes ser contactat/da per correu.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-200/70 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div class="text-sm text-slate-600">
+            <span class="font-semibold text-slate-900">Classes amb Agata</span> · Online
+            <span class="mx-2">·</span>
+            <a class="hover:text-slate-900 underline" href="mailto:agata298m@gmail.com">agata298m@gmail.com</a>
+          </div>
+          <div class="text-xs text-slate-500">
+            © <span id="year"></span> Agata. Tots els drets reservats.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // ✅ Quan em donis l'endpoint real, el poses aquí.
+    // Exemple: "https://tu-endpoint.com/api/contact"
+    const FORM_ENDPOINT = "PASTE_YOUR_ENDPOINT_HERE";
+
+    const form = document.getElementById("contactForm");
+    const alertBox = document.getElementById("formAlert");
+    const submitBtn = document.getElementById("submitBtn");
+
+    function showAlert(type, message) {
+      alertBox.classList.remove("hidden");
+      alertBox.className = "mt-4 rounded-2xl border p-4 text-sm";
+      if (type === "success") {
+        alertBox.classList.add("border-emerald-200", "bg-emerald-50", "text-emerald-900");
+      } else if (type === "error") {
+        alertBox.classList.add("border-rose-200", "bg-rose-50", "text-rose-900");
+      } else {
+        alertBox.classList.add("border-slate-200", "bg-slate-50", "text-slate-800");
+      }
+      alertBox.textContent = message;
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      // anti-spam (si s'omple, és bot)
+      const honeypot = document.getElementById("website").value;
+      if (honeypot) return;
+
+      if (!FORM_ENDPOINT || FORM_ENDPOINT === "PASTE_YOUR_ENDPOINT_HERE") {
+        showAlert("error", "Falta configurar l’endpoint del formulari. Passa-me’l i te’l deixo connectat.");
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Enviant…";
+
+      const payload = {
+        nom: form.nom.value.trim(),
+        email: form.email.value.trim(),
+        objectiu: form.objectiu.value,
+        nivell: form.nivell.value.trim(),
+        missatge: form.missatge.value.trim(),
+        to_email: "agata298m@gmail.com",
+        source: "classes-amb-agata-landing"
+      };
+
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+          const text = await res.text().catch(() => "");
+          throw new Error(text || "Error enviant el formulari.");
+        }
+
+        form.reset();
+        showAlert("success", "Missatge enviat! L’Agata et respondrà tan aviat com pugui.");
+      } catch (err) {
+        showAlert("error", "No s’ha pogut enviar. Prova de nou o escriu a agata298m@gmail.com.");
+        console.error(err);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Enviar missatge";
+      }
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
