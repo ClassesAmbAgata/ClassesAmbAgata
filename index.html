@@ -6,6 +6,9 @@
   <title>Classes amb Agata | Català online amb mètode i confiança</title>
   <meta name="description" content="Classes online de català amb mètode: conversa guiada, correcció respectuosa i objectius clars. Preparació C1–C2 i suport acadèmic." />
 
+  <!-- Favicon (puja favicon-128.png al repo) -->
+  <link rel="icon" type="image/png" href="./favicon-128.png">
+
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -16,27 +19,35 @@
 </head>
 
 <body class="bg-white text-slate-900">
-  <!-- CONFIG: posa aquí el WhatsApp (format internacional, sense + ni espais) -->
- <script>
-  // WhatsApp (format internacional, sense + ni espais)
-  // Número Agata: +34 646 73 79 63  -> 34646737963
-  const WHATSAPP_NUMBER = "34646737963";
-  const WHATSAPP_TEXT = encodeURIComponent(
-    "Hola Agata! 👋\n\nM'agradaria informació sobre classes online.\n\n✅ Objectiu:\n✅ Nivell:\n✅ Disponibilitat:"
-  );
-</script>
+
+  <!-- CONFIG: WhatsApp (format internacional, sense + ni espais) -->
+  <script>
+    // Número Agata: +34 646 73 79 63  -> 34646737963
+    const WHATSAPP_NUMBER = "34646737963";
+    const WHATSAPP_TEXT = encodeURIComponent(
+      "Hola Agata! 👋\n\nM'agradaria informació sobre classes online.\n\n✅ Objectiu:\n✅ Nivell:\n✅ Disponibilitat:"
+    );
+  </script>
 
   <!-- HEADER -->
-    <a href="#top" class="flex items-center gap-3">
-      <img src="./logo.png"
-           class="h-10 w-auto object-contain"
-           alt="Classes amb Agata logo" />
-    
-      <div class="leading-tight hidden sm:block">
-        <div class="font-semibold">Classes amb Agata</div>
-        <div class="text-xs text-slate-500">Català online · Mètode acadèmic</div>
-      </div>
-    </a>
+  <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <!-- Brand -->
+      <a href="#top" class="flex items-center gap-3 min-w-0">
+        <!-- Logo: usa logo-mark.png (recortado, sin fondo) -->
+        <img
+          src="./logo-mark.png"
+          class="h-10 w-10 shrink-0 object-contain"
+          alt="Classes amb Agata logo"
+        />
+
+        <div class="leading-tight hidden sm:block min-w-0">
+          <div class="font-semibold truncate">Classes amb Agata</div>
+          <div class="text-xs text-slate-500 truncate">Català online · Mètode acadèmic</div>
+        </div>
+      </a>
+
+      <!-- Nav -->
       <nav class="hidden items-center gap-6 text-sm text-slate-700 md:flex">
         <a class="hover:text-slate-950" href="#metode">Mètode</a>
         <a class="hover:text-slate-950" href="#serveis">Serveis</a>
@@ -45,6 +56,7 @@
         <a class="hover:text-slate-950" href="#contacte">Contacte</a>
       </nav>
 
+      <!-- CTA -->
       <a id="headerCta"
          href="#contacte"
          class="inline-flex items-center justify-center rounded-2xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2">
@@ -396,8 +408,7 @@
               </div>
             </div>
 
-            <p class="mt-4 text-xs text-slate-500">
-            </p>
+            <p class="mt-4 text-xs text-slate-500"></p>
           </div>
         </div>
       </div>
@@ -442,7 +453,6 @@
       el.rel = "noopener noreferrer";
     });
 
-    // Si no hi ha número configurat, avisa discretament a consola (no molesta a l’usuari)
     if (waLink === "#") {
       console.warn("Configura WHATSAPP_NUMBER amb el número internacional (sense + ni espais).");
     }
