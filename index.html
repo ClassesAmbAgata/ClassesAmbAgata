@@ -17,11 +17,14 @@
 
 <body class="bg-white text-slate-900">
   <!-- CONFIG: posa aquí el WhatsApp (format internacional, sense + ni espais) -->
-  <script>
-    // Exemple Espanya: 34600111222 (34 + número)
-    const WHATSAPP_NUMBER = "346XXXXXXXX"; // <-- CANVIA AIXÒ
-    const WHATSAPP_TEXT = encodeURIComponent("Hola Agata! M'agradaria informació sobre classes online. Objectiu: ____ · Nivell: ____ · Disponibilitat: ____");
-  </script>
+ <script>
+  // WhatsApp (format internacional, sense + ni espais)
+  // Número Agata: +34 646 73 79 63  -> 34646737963
+  const WHATSAPP_NUMBER = "34646737963";
+  const WHATSAPP_TEXT = encodeURIComponent(
+    "Hola Agata! 👋\n\nM'agradaria informació sobre classes online.\n\n✅ Objectiu:\n✅ Nivell:\n✅ Disponibilitat:"
+  );
+</script>
 
   <!-- HEADER -->
   <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur">
